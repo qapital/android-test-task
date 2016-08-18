@@ -6,7 +6,7 @@ When tapping a goal there should be a transition to the provided goal screen wit
 ##Implementation
 We provide you with a simplified API to get the list of goals to display and information about them. The API does not require any login. 
 What we would like to see is:
- - cache the data to a persistend storage
+ - cache the data to a persistent storage
  - some usage of [RxJava](https://github.com/ReactiveX/RxJava)
  - some usage of [Google Databinding](https://developer.android.com/topic/libraries/data-binding/index.html)
 
