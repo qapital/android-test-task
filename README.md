@@ -7,7 +7,7 @@ What we would like to see is:
  - A project written in Java
  - some usage of [RxJava](https://github.com/ReactiveX/RxJava)
  - some usage of [Google Databinding](https://developer.android.com/topic/libraries/data-binding/index.html)
- - (Optional) Read/write data to a persistent storage/DB
+ - Read/write data to a persistent storage/DB
 
 How you implement this and what external libraries you use are entirely up to you.
 
