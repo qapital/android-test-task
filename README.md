@@ -4,7 +4,7 @@ The test task involves writing a simplified version of the user's list of saving
 ## Implementation
 We provide you with a simplified API to get the list of goals to display and information about them. The API does not require any login. 
 What we would like to see is:
- - A project written in Java
+ - A project written ideally in Kotlin but we will accept Java as well
  - some usage of [RxJava](https://github.com/ReactiveX/RxJava)
  - some usage of [Google Databinding](https://developer.android.com/topic/libraries/data-binding/index.html)
  - Read/write data to a persistent storage/DB
