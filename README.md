@@ -52,16 +52,6 @@ This resource will return an object with one key, `feed`. This key maps to a lis
 | userId         | Int       | User id that the event is linked back |
 | savingsRuleId  | Int       | Savings Rule id that triggered the event |
 
-#### /users/:id
-This resource will return a user object for a specific id. The user object has the following fields:
-
-| Field          | Type   | Description |
-| -------------- | ------ | ----------- |
-| userId         | Int    | Unique user id |
-| displayName    | String | Display name of user |
-| avatarUrl      | String | URL where the users avatar can be downloaded from |
-
-
 ## Testing
 We expect the task to contain unit tests. UI tests are also welcome.
 
