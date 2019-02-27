@@ -17,7 +17,7 @@ The following API is available:
 http://qapital-ios-testtask.herokuapp.com
 
 #### /savingsgoals
-This resource will return an object with one key, savingsGoals. This key maps to a list of goal objects with the following fields:
+This resource will return an object with one key, `savingsGoals`. This key maps to a list of goal objects with the following fields:
 
 | Field          | Type	     | Description |
 | -------------- | --------- | ----------- |
@@ -30,6 +30,28 @@ This resource will return an object with one key, savingsGoals. This key maps to
 | id             | Int       | Unique id of the goal |
 | connectedUsers | List<Int> | A list of user ids that this goal is shared with. |
 
+#### /savingsrules
+This resource will return an object with one key, `savingsRules`. This key maps to a list of rules objects with the following fields:
+
+| Field          | Type	     | Description |
+| -------------- | --------- | ----------- |
+| id             | Int       | Unique id of the rule |
+| type           | String    | The type of Savings Rule |
+| amount         | Float       | The amount Saving Rule saves |
+
+#### /savingsgoals/:id/feed
+This resource will return an object with one key, `feed`. This key maps to a list of feed items for goal details screen:
+
+| Field          | Type      | Description |
+| -------------- | --------- | ----------- |
+| id             | String    | Unique UUID of the feed event |
+| type           | String    | Type of the event |
+| timestamp      | String    | Timestamp of event in `YYYY-MM-DDThh:mm:ss+00:00` format |
+| message        | String    | Message using HTML syntax  |
+| amount         | Float     | Amount saved  |
+| userId         | Int       | User id that the event is linked back |
+| savingsRuleId  | Int       | Savings Rule id that triggered the event |
+
 #### /users/:id
 This resource will return a user object for a specific id. The user object has the following fields:
 
@@ -39,11 +61,12 @@ This resource will return a user object for a specific id. The user object has t
 | displayName    | String | Display name of user |
 | avatarUrl      | String | URL where the users avatar can be downloaded from |
 
+
 ## Testing
 We expect the task to contain unit tests. UI tests are also welcome.
 
 ## Design
-There is a sketch file showing how we would like you to display this list. 
+There is a sketch file (or two png images) showing how we would like you to display this list. 
 
 ## Submiting
 Just send us your code along with a description on how to run the app and the tests. If there is anything that you have not had time to complete or intentionally left out please reason on how you would implement it or why it was left out.
